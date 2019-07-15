@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Techdegree-Project-7</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/toggle-switch.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+    
 </head>
 
 <body class="container">
@@ -18,22 +21,22 @@
     <!-- div containing the bell icon -->
     <div class="main-wrapper">
         
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg version="1.1" id="Layer_1" width="30px" height="30px" class="bell-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
         <style type="text/css">
             .st0{fill:#FFFFFF;}
         </style>
         <g id="_x36__6_">
             <g>
-                <path class="st0" d="M24,18v-8c0-5.5-4.5-10-10-10S4,4.5,4,10v8l-4,8h9.1c0.5,2.3,2.5,4,4.9,4s4.4-1.7,4.9-4H28L24,18z M14,28
+                <path class="bell" d="M24,18v-8c0-5.5-4.5-10-10-10S4,4.5,4,10v8l-4,8h9.1c0.5,2.3,2.5,4,4.9,4s4.4-1.7,4.9-4H28L24,18z M14,28
                     c-1.3,0-2.4-0.8-2.8-2h5.6C16.4,27.2,15.3,28,14,28z M3,24l3-6v-8c0-4.4,3.6-8,8-8s8,3.6,8,8v8l3,6H3z"/>
             </g>
         </g>
         </svg>
         <div class="bell-circle"></div>
-
-        <img class="profile-img" src="" alt="User profile image" width="40px" height="40px">
-        <h3>Josh Sulivan</h3>
+        <div class="border"></div>
+        <img class="profile-img" src="images/member-4.jpg" alt="User profile image" width="40px" height="40px">
+        <h3>Dan Oliver</h3>
     </div>
 </header>
  
@@ -210,6 +213,7 @@
         </div>
     </section>
 
+    <!-- members activity widget -->
     <section class="members-activity">
         <h3>RECENT ACTIVITY</h3>
 
@@ -243,6 +247,60 @@
                     <p>1 day ago</p>
                 </div>
             </div>             
+    </section>
+
+    <!-- messaging widget -->
+    <section class="message">
+        <h3>MESSAGE USER</h3>
+
+        <form class="widget-container">
+            <input type="text" placeholder="Search for user" class="form-field" id="userField">
+            <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
+            <button class="button-primary" id="send">Send</button>
+        </form>
+    </section>
+
+    <!-- local settings widget -->
+    <section class="settings">
+        <h3>SETTINGS</h3>
+
+        <label class="switch-light switch-ios" onclick="">
+            <input type="checkbox">
+          
+            <strong>
+              Send Email Notifications
+            </strong>
+          
+            <span>
+              <span>Off</span>
+              <span>On</span>
+              <a></a>
+            </span>
+          </label>
+
+          <label class="switch-light switch-ios" onclick="">
+            <input type="checkbox">
+          
+            <strong>
+              Set Profile to Public
+            </strong>
+          
+            <span>
+              <span>Off</span>
+              <span>On</span>
+              <a></a>
+            </span>
+          </label>
+
+          <select class="form-field" id="timezone">
+            <option disabled selected>Select a Timezone</option>
+            <option>Eastern</option>
+
+          </select>
+          <div class="settings-button">
+              <button class="button-primary" id="save">Save</button>
+              <button class="button-disabled" id="cancel">Cancel</button>
+          </div>
     </section>
 
  </main>   
