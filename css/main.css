@@ -7,8 +7,10 @@
 }
 
 .container {
-    
-    min-width: 100%;
+    display: block;
+    min-width: 360px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Base styles Mobile layout */
@@ -133,3 +135,6 @@
     border-radius: 5px;
     border-style: none; 
 }
+
+/* Alert bar */
+
