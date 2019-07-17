@@ -9,7 +9,7 @@
 
 .container {
     display: block;
-    min-width: 460px;
+    max-width: 460px;
     width: 100%;
     margin: 0 auto;
 }
@@ -208,45 +208,43 @@
 
 .social-container {
     border: 1px solid lightgrey;
-    display: inline-block;
-    min-width: 30%;
+    display: -webkit-box;
+    max-width: 80%;
     border-radius: 5px;
-    padding: 6px;
-    margin: 15px 5px;
-    text-align: center
-    
-    
+    padding: 10px;
+    margin: 15px auto;
 }
 
 .social-container .social-svg {
     background-color: #5e76df;
     border: 1px solid black;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    text-align: center;
+    width: 65px;
+    height: 65px;
+    padding: 10px;
 }
+
+
+
 
 .social-container span {
     font-weight: bold;
     color: #5e76df;
-    text-align: center;
 }
 
 .social-container p {
     font-size: 35px;
     font-weight: lighter;
-    text-align: center;
 }
 
-/* .twitter-text,
+.twitter-text,
 .facebook-text,
 .google-text {
-    float: left;
-    margin-left: 15px;
-} */
+    
+    margin-left: 20px;
+}
 
-/* New Members */
+/* New Members/recent activity */
 
 .members h3,
 .members-activity h3 {
@@ -263,7 +261,6 @@
     display: flex;
     padding: 10px 20px;
     border-bottom: 1px solid lightgray;
-   
 }
 .profile-img {
     border-radius: 50%;
@@ -275,6 +272,90 @@
     margin-left: 10px;
 }
 
-.member-container .date {
+ .date {
     margin: auto 0 0 auto;
 }
+
+/* message user */
+
+.message h3 {
+    margin: 20px;
+}
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.widget-container input {
+    margin-bottom: 15px;
+    line-height: 2;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px;
+}
+
+.widget-container textarea {
+    margin-bottom: 15px;
+    line-height: 2;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px;
+}
+
+.button-primary,
+.button-disabled {
+    padding: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: #5e76df;
+    color: #fff;
+}
+
+/* settings */
+
+.settings {
+    margin: 20px;
+   display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.button-disabled {
+    background-color: gray;
+}
+
+/* toggle btn */
+
+
+
+
+/* toggle btn */
+
+
+.form-field{
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 10px;
+    
+    
+}
+
+.settings-button {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#save,
+#cancel {
+    line-height: 0.9;
+    width: 47%;
+    border-radius: 5px;
+    border-style: solid;
+    color: #fff;
+}
+

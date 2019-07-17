@@ -167,7 +167,7 @@
       z-index: 2;
       display: block;
       float: left;
-      padding: 0 0.5em;
+      padding: 0 8px;
       margin: 0;
       text-align: center; }
     .switch-toggle a {
@@ -266,18 +266,18 @@
   .switch-ios.switch-light a {
     left: 0;
     top: 0;
-    width: 2em;
-    height: 2em;
+    width: 32px;
+    height: 32px;
     background-color: #fff;
     border-radius: 100%;
-    border: 0.25em solid #D8D9DB;
+    border: 4px solid #D8D9DB;
     transition: all .2s ease-out; }
   .switch-ios.switch-light > span {
     display: block;
     width: 100%;
-    height: 2em;
+    height: 32px;
     background-color: #D8D9DB;
-    border-radius: 1.75em;
+    border-radius: 28px;
     transition: all .4s ease-out; }
   .switch-ios.switch-light > span span {
     position: absolute;
@@ -285,18 +285,18 @@
     left: 0;
     width: 100%;
     opacity: 0;
-    line-height: 1.875em;
+    line-height: 30px;
     vertical-align: middle;
     transition: all .2s ease-out; }
     .switch-ios.switch-light > span span:first-of-type {
       opacity: 1;
-      padding-left: 1.875em; }
+      padding-left: 30px; }
     .switch-ios.switch-light > span span:last-of-type {
-      padding-right: 1.875em; }
+      padding-right: 30px; }
   .switch-ios.switch-light input:checked ~ span a {
     left: 100%;
     border-color: #4BD865;
-    margin-left: -2em; }
+    margin-left: -32px; }
   .switch-ios.switch-light input:checked ~ span {
     border-color: #4BD865;
     box-shadow: inset 0 0 0 30px #4BD865; }
@@ -311,8 +311,8 @@
     box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0; }
     .switch-ios.switch-toggle a {
       background-color: #4BD865;
-      border: 0.125em solid #D8D9DB;
-      border-radius: 1.75em;
+      border: 2px solid #D8D9DB;
+      border-radius: 28px;
       transition: all 0.12s ease-out; }
     .switch-ios.switch-toggle label {
       height: 2.4em;
@@ -340,7 +340,7 @@
   .switch-holo > span span,
   .switch-holo label {
     font-size: 85%;
-    line-height: 2.15625em; }
+    line-height: 34.5px; }
   .switch-holo a {
     background-color: #666;
     border-radius: 1px;
@@ -358,12 +358,12 @@
   /* switch-light
  */
   .switch-light.switch-material a {
-    top: -0.1875em;
-    width: 1.75em;
-    height: 1.75em;
+    top: -3px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     background: #fafafa;
-    box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.14), 0 0.1875em 0.125em -0.125em rgba(0, 0, 0, 0.2), 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 2px -2px rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
     transition: right 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
   .switch-material.switch-light {
     overflow: visible; }
@@ -374,11 +374,11 @@
   .switch-material.switch-light > span {
     overflow: visible;
     position: relative;
-    top: 0.1875em;
-    width: 3.25em;
-    height: 1.5em;
+    top: 3px;
+    width: 52px;
+    height: 24px;
     min-height: auto;
-    border-radius: 1em;
+    border-radius: 16px;
     background: rgba(0, 0, 0, 0.26); }
   .switch-material.switch-light span span {
     position: absolute;
@@ -386,7 +386,7 @@
   .switch-material.switch-light input:checked ~ span a {
     right: 0;
     background: #3f51b5;
-    box-shadow: 0 0.1875em 0.25em 0 rgba(0, 0, 0, 0.14), 0 0.1875em 0.1875em -0.125em rgba(0, 0, 0, 0.2), 0 0.0625em 0.375em 0 rgba(0, 0, 0, 0.12); }
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 6px 0 rgba(0, 0, 0, 0.12); }
   .switch-material.switch-light input:checked ~ span {
     background: rgba(63, 81, 181, 0.5); }
   /* switch-toggle
@@ -399,9 +399,9 @@
       display: table; }
   .switch-toggle.switch-material a {
     top: 48%;
-    width: 0.375em !important;
-    height: 0.375em;
-    margin-left: 0.25em;
+    width: 6px !important;
+    height: 6px;
+    margin-left: 4px;
     background: #3f51b5;
     border-radius: 100%;
     transform: translateY(-50%);
@@ -415,10 +415,10 @@
     top: 48%;
     left: 0;
     display: block;
-    width: 0.875em;
-    height: 0.875em;
+    width: 14px;
+    height: 14px;
     border-radius: 100%;
-    border: 0.125em solid rgba(0, 0, 0, 0.54);
+    border: 2px solid rgba(0, 0, 0, 0.54);
     transform: translateY(-50%); }
   .switch-toggle.switch-material input:checked + label:before {
     border-color: #3f51b5; }
@@ -433,24 +433,24 @@
     left: 0;
     z-index: 3;
     display: block;
-    width: 4em;
-    height: 4em;
+    width: 64px;
+    height: 64px;
     border-radius: 100%;
     background: #3f51b5;
     opacity: .4;
-    margin-left: -1.25em;
-    margin-top: -1.25em;
+    margin-left: -20px;
+    margin-top: -20px;
     transform: scale(0);
     transition: opacity .4s ease-in; }
   .switch-light.switch-material > span:after {
     left: auto;
     right: 0;
     margin-left: 0;
-    margin-right: -1.25em; }
+    margin-right: -20px; }
   .switch-toggle.switch-material label:after {
-    width: 3.25em;
-    height: 3.25em;
-    margin-top: -0.75em; }
+    width: 52px;
+    height: 52px;
+    margin-top: -12px; }
   @keyframes materialRipple {
     0% {
       transform: scale(0); }
@@ -479,15 +479,10 @@
 /* Bugfix for older Webkit, including mobile Webkit. Adapted from
  * http://css-tricks.com/webkit-sibling-bug/
  */
-@media only screen and (-webkit-max-device-pixel-ratio: 2) and (max-device-width: 80em) {
+@media only screen and (-webkit-max-device-pixel-ratio: 2) and (max-device-width: 1280px) {
   .switch-light,
   .switch-toggle {
     -webkit-animation: webkitSiblingBugfix infinite 1s; } }
 
 @-webkit-keyframes webkitSiblingBugfix {
   from {
-    -webkit-transform: translate3d(0, 0, 0); }
-  to {
-    -webkit-transform: translate3d(0, 0, 0); } }
-
-/*# sourceMappingURL=toggle-switch.css.map */
