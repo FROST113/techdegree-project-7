@@ -12,11 +12,11 @@
 
 </head>
 
-<body class="container">
+<body class="grid-container">
 
     <!-- header -->
 <header class="header">
-    <h1 class="logo"><span>Your</span>App&trade;</h1>
+    <h1 class="logo">Your<span>App&trade;</span></h1>
 
     <!-- div containing the bell icon -->
     <div class="main-wrapper">
@@ -59,12 +59,15 @@
      <div class="main-header">
         <h2 class="headline">Dashboard</h2>
         <div class="main-header-search">
-            <input type="search" placeholder="Search...">
+            <input class="search" type="search" placeholder="Search...">
         </div>
      </div>
 
      <div class="alert" id="alert">
-        <!-- <p><strong>Alert!</strong>You have 6 overdue tasks to complete. <a href="#" class="closeX">X</a></p> -->
+       <span class="alert-close">
+            <span><stong>Alert:</stong> You still have sevral unfinished projects.</span>
+            <button class="alert--close" type="button" name="button">X</button>
+       </span>
         <!-- JS will insert alert here -->
      </div>
 
