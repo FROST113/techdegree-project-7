@@ -11,12 +11,15 @@ svg {
     height: 50px;
 }
 
+body {
+    max-width: 100%;
+}
 
 /* Mobile Layout (320px) */
 
 .grid-container {
     display: grid;
-    max-width: 320px;
+    min-width: 320px;
     margin: 0 auto;
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -117,7 +120,7 @@ ul {
 .main-nav img {
     width: 40px;
     height: 40px;
-    margin: 5px 10px;
+    margin: 10px 10px;
 }
 
 
@@ -145,6 +148,7 @@ ul {
 
 .main-header-search {
     float: right;
+    margin-left: auto;
     background-color: #555a59;
     padding: 3px;
     border-bottom-left-radius: 5px;
@@ -180,6 +184,10 @@ ul {
     display: inline;
 }
 
+.traffic h3 {
+    margin: 15px;
+}
+
 .traffic-header {
     margin: 10px;
 }
@@ -204,3 +212,250 @@ ul {
 .widget-container-full {
     margin-top: 5px;
 }
+
+/* Bar graph */
+
+.daily-traffic {
+    padding: 10px;
+}
+
+.daily-traffic h3 {
+    margin: 15px;
+}
+
+/* Pie Chart */
+
+.mobile-users h3 {
+    margin: 15px;
+}
+
+#donut-chat {
+    padding: 10px;
+}
+
+/* Social Stats */
+
+.social-title {
+    margin: 15px;
+}
+
+.social-container {
+    border: 3px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 10px auto;
+}
+
+.social-container .social-svg {
+    background-color: #0d457e;
+    border: 1px solid #0d457e;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.social-container span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.social-container p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* New Members */
+
+.members h3 {
+    margin: 25px;
+}
+
+ .members-container {
+    display: flex;
+    column-gap: 10px;
+    row-gap: 1em;
+    padding: 10px 0px;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 5px;
+    margin: 5px 0;
+    max-width: 100%;
+}
+
+.members-container p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.member-text p {
+    text-align: left
+}
+
+.members-container .profile-img {
+    margin-left: 0px;
+    padding: 5px;
+    display: block;
+    border-radius: 50%;
+}
+
+.member-text a {
+    margin-top: 15px;
+    display: block;
+    font-size: small;
+}
+
+.members-container .date {
+   margin: auto;
+}
+
+/* Recent Activity */
+
+.members-recent h3 {
+    margin: 25px;
+}
+
+/* 
+.recent-text {
+    font-size: 10px;
+} */
+
+/* Message User */
+
+.message h3 {
+    margin: 20px;
+}
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.widget-container input {
+    border-style: solid;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    line-height: 1.25;
+}
+
+.widget-container textarea {
+    border-style: solid;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 5px;
+    line-height: 1.25;
+}
+
+.widget-container-half {
+    padding: 10px;
+}
+
+
+/* Settings */
+
+.settings {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-primary,
+.button-disabled {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #0d457e;
+    border: 2px solid #0d457e;
+    color: #fff;
+}
+
+/* Toggle Switch */
+
+/* Time zone */
+
+.form-field {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Tablet layout (768px) */
+
+@media (min-width: 768px) {
+    .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+    "header header"
+    "navigation main";
+    }
+
+    .main {
+        display: grid;
+    }
+
+    .traffic-nav {
+        margin: -35px auto;
+    }  
+
+    .social-container {
+        display: inline-flex;
+        width: 30%;
+    }
+
+
+    .members-container p {
+        padding: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main {
+        grid-template-columns: 50%; 
+    }
+}
+
+@media (min-width: 768px) {
+    .row-1 {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .traffic, .social {
+    grid-column: 1 / span 2;
+    }
+    }
+
+    @media (min-width: 768px) {
+        .daily-traffic, .members, .message {
+        grid-column: 1 / span 1;
+        }
+        }
+
+        @media (min-width: 768px) {
+            .mobile-users, .members-activity, .settings {
+            grid-column: 2 / span 1;
+            }
+            }
+
+        .widget-container-full, .widget-container-half {
+            width: 95vw;
+            }
+
+            @media (min-width: 768px) {
+                .widget-container-full {
+                width: 90vw;
+                }
+                .widget-container-half {
+                 width: 45vw;   
+                }
+            }       
+        
+    
+
+    
