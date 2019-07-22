@@ -278,7 +278,7 @@ ul {
     column-gap: 10px;
     row-gap: 1em;
     padding: 10px 0px;
-    border-bottom: 1px solid lightgrey;
+    border: 1px solid lightgrey;
     border-radius: 5px;
     margin: 5px 0;
     max-width: 100%;
