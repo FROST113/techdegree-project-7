@@ -8,7 +8,7 @@ alert.innerHTML =
 `
 <div class="alert-close">
     <p><strong>Alert:<strong> You Have <strong>6<strong>  overdue tasks to complete</p>
-    <p class="alert--close">X</p>
+    <p class="close-alert">X</p>
 </div>    
 `
 alert.addEventListener('click', e => {
@@ -142,13 +142,13 @@ const send = document.getElementById("send");
 send.addEventListener('click', () => {
     // ensure user and message fields are filled out
     if (user.value === "" && message.value === "") {
-    alert("Please fill out user and message fields before sending");
+    window.alert("Please fill out user and message fields before sending");
     } else if (user.value === "" ) {
-    alert("Please fill out user field before sending");
+    window.alert("Please fill out user field before sending");
     } else if (message.value === "" ) {
-    alert("Please fill out message field before sending");
+    window.alert("Please fill out message field before sending");
     } else {
-    alert(`Message successfully sent to: ${user.value}`);
+    window.alert(`Message successfully sent to: ${user.value}`);
     }
 });
     
