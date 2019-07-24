@@ -183,7 +183,7 @@ ul {
     cursor: pointer;
 }
 
-.alert--close:hover {
+.close-alert:hover {
     color: red;
 }
 

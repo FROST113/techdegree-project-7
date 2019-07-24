@@ -13,7 +13,7 @@ alert.innerHTML =
 `
 alert.addEventListener('click', e => {
     const element = e.target;
-    if(element.classList.contains("alert--close")) {
+    if(element.classList.contains("close-alert")) {
         alert.style.display = "none" 
     }
 });
