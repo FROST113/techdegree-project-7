@@ -381,8 +381,7 @@ ul {
     flex-direction: column;
 }
 
-.button-primary,
-.button-disabled {
+.button-primary {
     padding: 10px;
     border-radius: 5px;
     background-color: #0d457e;
@@ -409,6 +408,23 @@ ul {
     margin: 15px 0;
     padding: 10px;
     border-radius: 5px;
+}
+
+/* Settings buttons */
+
+.settings-button {
+
+}
+
+.button-secondary,
+.button-disabled {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #0d457e;
+    border: 2px solid #0d457e;
+    color: #fff;
+    width: 49%;
+    margin: auto;
 }
 
 /* Tablet layout (768px) */
@@ -440,7 +456,7 @@ ul {
     }
 
     .members-container .date {
-        margin-left: auto;
+        margin-right: 15px;
      }
 
 
