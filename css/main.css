@@ -102,9 +102,12 @@ ul {
 
 .bell {
     cursor: pointer;
-    transition: .5s;
 }
 
+.bell-svg:hover {
+    fill: #fff;
+    transition: .5s
+}
 
 
 /* Main Nav */
@@ -258,11 +261,13 @@ ul {
     margin: 10px auto;
 }
 
-.social-container .social-svg {
+.twitter-image,
+.facebook-image,
+.google-image {
+    border-radius: 50%;
     background-color: #0d457e;
     border: 1px solid #0d457e;
-    width: 50px;
-    border-radius: 50%;
+    padding: 10px;
 }
 
 .social-container span {
@@ -319,7 +324,7 @@ ul {
 }
 
 .members-container .date {
-   margin: auto;
+   margin-left: auto;
 }
 
 /* Recent Activity */
@@ -386,6 +391,17 @@ ul {
 }
 
 /* Toggle Switch */
+.adjust-settings {
+    display: inline-flex;
+}
+
+
+
+.toggle-btn {
+   margin-left: 215px;
+   max-width: 50%;
+   margin-top: -20px;
+}
 
 /* Time zone */
 
@@ -422,6 +438,10 @@ ul {
         width: 30%;
         margin-left: 15px;
     }
+
+    .members-container .date {
+        margin-left: auto;
+     }
 
 
     .members-container p {
